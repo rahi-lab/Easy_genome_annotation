@@ -1,0 +1,43 @@
+#!/bin/bash
+
+strain_folder=CEN-PK2
+python3 ../whole_genome_annotation.py \
+--bowtie2_path ../bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file $strain_folder/*0.fsa \
+--labeled_sequences_FAFSA_file ../whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name $strain_folder/easy_genome_annotation_based_on_S288C.gff
+
+strain_folder=Sigma1278b
+python3 ../whole_genome_annotation.py \
+--bowtie2_path ../bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file $strain_folder/*0.fsa \
+--labeled_sequences_FAFSA_file ../whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name $strain_folder/easy_genome_annotation_based_on_S288C.gff
+
+strain_folder=SK1
+python3 ../whole_genome_annotation.py \
+--bowtie2_path ../bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file $strain_folder/*0.fsa \
+--labeled_sequences_FAFSA_file ../whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name $strain_folder/easy_genome_annotation_based_on_S288C.gff
+
+strain_folder=W303_2015
+python3 ../whole_genome_annotation.py \
+--bowtie2_path ../bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file $strain_folder/*0.fsa \
+--labeled_sequences_FAFSA_file ../whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name $strain_folder/easy_genome_annotation_based_on_S288C.gff
+
+strain_folder=W303_Liti_2009
+python3 ../whole_genome_annotation.py \
+--bowtie2_path ../bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file $strain_folder/*.fsa \
+--labeled_sequences_FAFSA_file ../whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name $strain_folder/easy_genome_annotation_based_on_S288C.gff
+
+strain_folder=S288C
+python3 ../whole_genome_annotation.py \
+--bowtie2_path ../bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file $strain_folder/*.fsa \
+--labeled_sequences_FAFSA_file ../whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name $strain_folder/easy_genome_annotation_based_on_S288C.gff
