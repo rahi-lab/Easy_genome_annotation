@@ -1,10 +1,21 @@
-# Easy genome analysis
+# Easy genome annotation
 This tool consists of two modules:
 
 1. Whole genome annotation: Given an unannotated genome in FASTA format, this tool creates a GFF annotation file based on sequence similarity with labeled sequences in FASTA format.
-2. Annotation of genomic modifications: Given a GFF genome annotation and a GFF file for DNA sequences that an organism was transformed with, this tool updates the genomic GFF file by analyzing how the transformant DNA integrated into the genome by homologous recombination.
+2. Annotation of genomic modifications: Given a GFF genome annotation and a GFF file describing transforming DNA sequences, this tool updates the genomic annotations by simulating homologous recombination of the transformant DNA.
 
 # Installation
+
+1. If you do not have conda or miniconda installed, download it from https://docs.conda.io/en/latest/miniconda.html.
+2. Clone this repository (`git clone https://github.com/rahi-lab/Easy_genome_annotation`).
+3. In the command line, navigate to the folder where you cloned YeaZ-GUI (command `cd Easy_genome_annotation`).
+4. In the command line, create a virtual environment with python 3.9 with the command `conda create -n EGA python=3.8.5`.
+5. Activate the environment using `conda activate EGA`. 
+6. Install the Python package pysam `pip install pysam`.
+7. 
+
+
+
 Part 1 and 3 use several bioinformatics tools that need to be installed beforehand, with specified versions that were used in writing of the scripts: 
   * bowtie2, version: 2.3.5.1 : A tool for aligning sequencing reads to a reference genome.
   * samtools, version: 1.10 : A suite of programs for interacting with high-throughput sequencing data formats.
