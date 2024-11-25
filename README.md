@@ -1,8 +1,8 @@
 # Easy genome annotation (EGA)
 This tool consists of two modules:
 
-1. Whole genome annotation: Given an unannotated genome in FASTA format, this tool creates a GFF annotation file based on sequence similarity with labeled sequences in FASTA format.
-2. Annotation of genomic modifications: Given a GFF genome annotation and a GFF file describing transforming DNA sequences, this tool updates the genomic annotations by simulating homologous recombination of the transformant DNA.
+1. Whole genome annotation: Given an unannotated genome in FASTA format, this module creates a GFF annotation file based on sequence similarity with labeled sequences in FASTA format.
+2. Annotation of genomic modifications: Given a GFF genome annotation and a GFF file describing transforming DNA sequences, this module updates the genomic annotations by simulating homologous recombination of the transformant DNA.
 
 # Installation
 
@@ -12,7 +12,8 @@ This tool consists of two modules:
 4. In the command line, create a virtual environment with python 3.9 with the command `conda create -n EGA python=3.8.5`.
 5. Activate the environment using `conda activate EGA`. 
 6. Install the Python package pysam `pip install pysam`.
-7. Download Bowtie 2 from https://sourceforge.net/projects/bowtie-bio/files/bowtie2/. (This code has been tested with bowtie2-2.5.4-sra-linux-x86_64.zip.)
+7. Download Bowtie 2 from https://sourceforge.net/projects/bowtie-bio/files/bowtie2/. This code has been tested with version 2.5.4. on Linux using bowtie2-2.5.4-sra-linux-x86_64.zip.
+8. Place the Bowtie 2 zip file in the Easy_genome_annotation folder and unzip it.
 
 
 
