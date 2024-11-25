@@ -16,25 +16,19 @@ This tool consists of two modules:
 8. Place the Bowtie 2 zip file in the Easy_genome_annotation folder and unzip it.
 
 
-
-Part 1 and 3 use several bioinformatics tools that need to be installed beforehand, with specified versions that were used in writing of the scripts: 
-  * bowtie2, version: 2.3.5.1 : A tool for aligning sequencing reads to a reference genome.
-  * samtools, version: 1.10 : A suite of programs for interacting with high-throughput sequencing data formats.
-  * bcftools, version: 1.10.2 : A set of utilities for variant calling and manipulation of variant call format (VCF) files.
-
-Parts 2 and 4 are written in python, version 3.11.4. <br/>
-This project relies on the following Python standard libraries:
-- `sys`
-- `os`
-- `glob`
-- `re`
-
-No additional third-party libraries are required.
-
-
 # Usage
 
-## 1. Creating a custom gene annotations file 
+## 1. Creating a whole gene annotation file 
+
+
+1. Open a terminal.
+2. Activate the environment using `conda activate EGA`.
+3. Navigate to the directory where you installed EGA using `cd <installation_directory>/EGA`
+4. `python3 whole_genome_annotation.py \
+--bowtie2_path bowtie2-2.5.4-sra-linux-x86_64/ \
+--unannotated_genome_FAFSA_file whole_genome_annotation_sample_files/genome_W303_Liti_2009.fsa \
+--labeled_sequences_FAFSA_file whole_genome_annotation_sample_files/orf_genomic_all.fasta \
+--gff_output_file_name whole_genome_annotation_sample_files/W303_Liti_2009.gff`
 
 
 ### Process description:
