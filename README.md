@@ -1,4 +1,4 @@
-# Easy genome annotation
+# Easy genome annotation (EGA)
 This tool consists of two modules:
 
 1. Whole genome annotation: Given an unannotated genome in FASTA format, this tool creates a GFF annotation file based on sequence similarity with labeled sequences in FASTA format.
@@ -8,11 +8,11 @@ This tool consists of two modules:
 
 1. If you do not have conda or miniconda installed, download it from https://docs.conda.io/en/latest/miniconda.html.
 2. Clone this repository (`git clone https://github.com/rahi-lab/Easy_genome_annotation`).
-3. In the command line, navigate to the folder where you cloned YeaZ-GUI (command `cd Easy_genome_annotation`).
+3. In the command line, navigate to the folder where you cloned EGA (command `cd Easy_genome_annotation`).
 4. In the command line, create a virtual environment with python 3.9 with the command `conda create -n EGA python=3.8.5`.
 5. Activate the environment using `conda activate EGA`. 
 6. Install the Python package pysam `pip install pysam`.
-7. 
+7. Download Bowtie 2 from https://sourceforge.net/projects/bowtie-bio/files/bowtie2/. (This code has been tested with bowtie2-2.5.4-sra-linux-x86_64.zip.)
 
 
 
