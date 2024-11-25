@@ -24,11 +24,11 @@ This tool consists of two modules:
 1. Open a terminal.
 2. Activate the environment using `conda activate EGA`.
 3. Navigate to the directory where you installed EGA using `cd <installation_directory>/EGA`
-4. `python3 whole_genome_annotation.py \
---bowtie2_path bowtie2-2.5.4-sra-linux-x86_64/ \ <br>
+4. ```python3 whole_genome_annotation.py \
+--bowtie2_path bowtie2-2.5.4-sra-linux-x86_64/ \
 --unannotated_genome_FAFSA_file whole_genome_annotation_sample_files/genome_W303_Liti_2009.fsa \
 --labeled_sequences_FAFSA_file whole_genome_annotation_sample_files/orf_genomic_all.fasta \
---gff_output_file_name whole_genome_annotation_sample_files/W303_Liti_2009.gff`
+--gff_output_file_name whole_genome_annotation_sample_files/W303_Liti_2009.gff```
 
 
 ### Process description:
