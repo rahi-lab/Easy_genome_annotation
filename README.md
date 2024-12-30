@@ -9,7 +9,7 @@ This tool consists of two modules:
 1. If you do not have conda or miniconda installed, download it from https://docs.conda.io/en/latest/miniconda.html.
 2. Clone this repository (`git clone https://github.com/rahi-lab/Easy_genome_annotation`).
 3. In the command line, navigate to the folder where you cloned EGA (command `cd Easy_genome_annotation`).
-4. In the command line, create a virtual environment with python 3.9 with the command `conda create -n EGA python=3.8.5`.
+4. In the command line, create a virtual environment with python 3.8.5 with the command `conda create -n EGA python=3.8.5`.
 5. Activate the environment using `conda activate EGA`. 
 6. Install the Python package pysam `pip install pysam`.
 7. Download Bowtie 2 from https://sourceforge.net/projects/bowtie-bio/files/bowtie2/. The EGA code has been tested with Bowtie 2 version 2.5.4. on Linux using bowtie2-2.5.4-sra-linux-x86_64.zip.
@@ -18,7 +18,7 @@ This tool consists of two modules:
 
 # Usage
 
-## 1. Creating a whole gene annotation file 
+## 1. Creating a whole genome annotation file 
 
 
 1. Open a terminal.
